@@ -14,14 +14,22 @@ Se requiere revisar el portal público de simuladores de Colombia Compra Eficien
 - Pestaña: Respuestas.
 - Métrica: menor `Precio Ofertado Con Impuestos` entre proveedores.
 
-## Limitación técnica encontrada
+## Estado real de la consulta
+
+La captura proporcionada por el usuario confirma que el portal **sí devuelve simulaciones** al aplicar los filtros `Cerrado` y `Nube pública V`. Por ejemplo, en la captura se ven los números `39229`, `39267`, `39311`, `39310`, `39302`, `39278`, `39268`, `38947` y `39265`.
+
+Esto no confirma todavía que esas simulaciones sean OCI: es necesario abrir cada una, revisar el campo **Nube** y, solo para las que indiquen `Oracle Cloud Infrastructure` / `OCI`, revisar la pestaña **Respuestas** para calcular el menor `Precio Ofertado Con Impuestos`.
+
+## Limitación técnica de la automatización
 
 Durante la extracción desde este entorno, el acceso HTTP directo al dominio `simuladoresvistapublica.colombiacompra.gov.co` fue bloqueado por el proxy corporativo del contenedor con respuesta `403 Forbidden` al intentar abrir un túnel HTTPS. Por esa razón no fue posible descargar programáticamente la información viva del portal desde la terminal del repositorio.
+
+El valor `0` del reporte significa **cero registros descargados automáticamente por el contenedor**, no cero resultados en el portal ni cero simulaciones OCI.
 
 ## Entregables generados
 
 - `reports/oci_simulaciones_vista_publica_reporte.html`: reporte ejecutivo en formato texto/HTML, visible en la web y copiable a Excel.
-- `reports/oci_simulaciones_vista_publica.csv`: estructura tabular compatible con Excel; incluye una fila explicativa `SIN_DATOS_EXTRAIDOS` porque la extracción real fue bloqueada desde este entorno.
+- `reports/oci_simulaciones_vista_publica.csv`: estructura tabular compatible con Excel, lista para incorporar exclusivamente las simulaciones OCI que se validen en el portal.
 - Nota: se evita depender de archivos binarios porque la vista web del repositorio puede mostrar el mensaje `Archivo binario no mostrado` o `Los archivos binarios no se admiten`.
 
 ## Estructura analítica del reporte compatible con Excel
@@ -40,6 +48,10 @@ Columnas principales del detalle:
 10. Número de proveedores evaluados.
 11. URL pública de la simulación.
 12. Observaciones de validación.
+
+## Siguiente paso para completar el análisis
+
+Desde el navegador que sí tiene acceso al portal, abrir cada `#Simulación` de la lista filtrada y recopilar solo las que indiquen OCI. Para cada una, copiar o guardar los datos de la pestaña **Respuestas**. Si se comparte esa información (archivo descargado, texto o capturas legibles), se puede completar el CSV y el reporte con el proveedor y precio mínimo reales.
 
 ## Recomendación operativa
 

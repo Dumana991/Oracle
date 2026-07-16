@@ -40,8 +40,9 @@
       <tr><td>Filtro estado</td><td>Cerrado</td></tr>
       <tr><td>Filtro instrumento</td><td>Nube pública V</td></tr>
       <tr><td>Filtro nube</td><td>Oracle Cloud Infrastructure / OCI</td></tr>
-      <tr><td>Registros extraídos desde este entorno</td><td>0</td></tr>
-      <tr><td>Estado de extracción</td><td>Bloqueada por proxy HTTPS 403 desde el contenedor</td></tr>
+      <tr><td>Registros descargados automáticamente por este entorno</td><td>0</td></tr>
+      <tr><td>Estado del portal en la sesión del usuario</td><td>Disponible; la captura del usuario muestra resultados con los filtros Cerrado y Nube pública V.</td></tr>
+      <tr><td>Estado de extracción automatizada</td><td>Bloqueada por proxy HTTPS 403 desde el contenedor; este resultado no significa que el portal esté vacío.</td></tr>
     </tbody>
   </table>
 
@@ -64,7 +65,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td colspan="12">Sin registros extraídos en este entorno por bloqueo de acceso HTTPS al portal oficial.</td></tr>
+      <tr><td colspan="12">Aún no hay simulaciones OCI validadas: el contenedor no puede abrir los detalles ni la pestaña Respuestas. No se deben interpretar los filtros de la captura como una confirmación de OCI, pues cada simulación requiere validación individual.</td></tr>
     </tbody>
   </table>
 
@@ -80,7 +81,7 @@
   </ol>
 
   <div class="warning">
-    <strong>Limitación técnica:</strong> desde este entorno, el acceso directo al dominio simuladoresvistapublica.colombiacompra.gov.co fue bloqueado por el proxy con respuesta 403 Forbidden al intentar abrir un túnel HTTPS.
+    <strong>Limitación técnica:</strong> el portal sí responde en el navegador del usuario, como muestra la captura recibida. Sin embargo, desde este entorno de automatización el acceso directo al dominio simuladoresvistapublica.colombiacompra.gov.co fue bloqueado por el proxy con respuesta 403 Forbidden. Por ello, el valor 0 corresponde únicamente a registros descargados automáticamente por el contenedor, no a resultados del portal.
   </div>
 </body>
 </html>
