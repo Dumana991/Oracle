@@ -18,6 +18,8 @@ Se requiere revisar el portal público de simuladores de Colombia Compra Eficien
 
 La captura proporcionada por el usuario confirma que el portal **sí devuelve simulaciones** al aplicar los filtros `Cerrado` y `Nube pública V`. Por ejemplo, en la captura se ven los números `39229`, `39267`, `39311`, `39310`, `39302`, `39278`, `39268`, `38947` y `39265`.
 
+La simulación `39311` quedó validada como `Oracle Cloud Infrastructure`: corresponde al evento de cotización `26536`, RFI `214768` y tiene `7` respuestas. Al comparar la columna `Precio Ofertado Con Impuestos`, el menor valor visible es **COP $728.930.575,00**, ofertado por **ITERIA SAS - IAD Software por Catalogo II**. Este registro se incorporó al CSV y al reporte HTML.
+
 Esto no confirma todavía que esas simulaciones sean OCI: es necesario abrir cada una, revisar el campo **Nube** y, solo para las que indiquen `Oracle Cloud Infrastructure` / `OCI`, revisar la pestaña **Respuestas** para calcular el menor `Precio Ofertado Con Impuestos`.
 
 ## Limitación técnica de la automatización
