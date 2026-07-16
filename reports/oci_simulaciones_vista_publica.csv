@@ -1,1 +1,2 @@
 numero_simulacion,entidad_compradora,nombre_simulacion,estado,instrumento,nube,proveedor_menor_precio,precio_ofertado_con_impuestos_minimo,moneda,proveedores_evaluados,url_simulacion,observaciones
+SIN_DATOS_EXTRAIDOS,,,,Nube pública V,Oracle Cloud Infrastructure / OCI,,,,,,No se extrajeron registros reales porque el acceso HTTPS al portal simuladoresvistapublica.colombiacompra.gov.co fue bloqueado por proxy 403 desde el entorno. Use este CSV como plantilla o cargue un Excel exportado del portal para completar el análisis.

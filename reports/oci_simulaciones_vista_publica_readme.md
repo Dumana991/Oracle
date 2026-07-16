@@ -21,7 +21,7 @@ Durante la extracción desde este entorno, el acceso HTTP directo al dominio `si
 ## Entregables generados
 
 - `reports/oci_simulaciones_vista_publica_reporte.html`: reporte ejecutivo en formato texto/HTML, visible en la web y copiable a Excel.
-- `reports/oci_simulaciones_vista_publica.csv`: estructura tabular compatible con Excel para cargar los resultados cuando el portal esté accesible.
+- `reports/oci_simulaciones_vista_publica.csv`: estructura tabular compatible con Excel; incluye una fila explicativa `SIN_DATOS_EXTRAIDOS` porque la extracción real fue bloqueada desde este entorno.
 - Nota: se evita depender de archivos binarios porque la vista web del repositorio puede mostrar el mensaje `Archivo binario no mostrado` o `Los archivos binarios no se admiten`.
 
 ## Estructura analítica del reporte compatible con Excel
