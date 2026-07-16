@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Análisis OCI - Simulaciones Nube Pública V</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 32px; color: #1f2937; }
+    h1 { color: #0f172a; }
+    h2 { margin-top: 28px; color: #1e3a8a; }
+    table { border-collapse: collapse; width: 100%; margin-top: 12px; }
+    th, td { border: 1px solid #cbd5e1; padding: 8px; text-align: left; font-size: 13px; }
+    th { background: #dbeafe; }
+    .warning { background: #fff7ed; border-left: 5px solid #f97316; padding: 12px; }
+    .ok { background: #f0fdf4; border-left: 5px solid #22c55e; padding: 12px; }
+  </style>
+</head>
+<body>
+  <h1>Análisis de simulaciones cerradas - Nube Pública V - OCI</h1>
+  <p><strong>Fecha de elaboración:</strong> 2026-07-16</p>
+
+  <div class="ok">
+    <strong>Archivo compatible con Excel:</strong> este reporte está en formato HTML de texto, no binario. Puede abrirse en el navegador, copiarse a Excel o guardarse como archivo .html.
+  </div>
+
+  <h2>Alcance solicitado</h2>
+  <ul>
+    <li>Estado de Simulación: Cerrado.</li>
+    <li>Instrumento: Nube pública V.</li>
+    <li>Elementos por página: 100.</li>
+    <li>Detalle de cada #Simulación.</li>
+    <li>Nube: Oracle Cloud Infrastructure / OCI.</li>
+    <li>Pestaña: Respuestas.</li>
+    <li>Métrica: menor Precio Ofertado Con Impuestos entre proveedores.</li>
+  </ul>
+
+  <h2>Resumen ejecutivo</h2>
+  <table>
+    <thead><tr><th>Indicador</th><th>Valor</th></tr></thead>
+    <tbody>
+      <tr><td>Filtro estado</td><td>Cerrado</td></tr>
+      <tr><td>Filtro instrumento</td><td>Nube pública V</td></tr>
+      <tr><td>Filtro nube</td><td>Oracle Cloud Infrastructure / OCI</td></tr>
+      <tr><td>Registros descargados automáticamente por este entorno</td><td>0</td></tr>
+      <tr><td>Estado del portal en la sesión del usuario</td><td>Disponible; la captura del usuario muestra resultados con los filtros Cerrado y Nube pública V.</td></tr>
+      <tr><td>Estado de extracción automatizada</td><td>Bloqueada por proxy HTTPS 403 desde el contenedor; este resultado no significa que el portal esté vacío.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Detalle de simulaciones OCI</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Número de simulación</th>
+        <th>Entidad compradora</th>
+        <th>Nombre simulación</th>
+        <th>Estado</th>
+        <th>Instrumento</th>
+        <th>Nube</th>
+        <th>Proveedor menor precio</th>
+        <th>Precio ofertado con impuestos mínimo</th>
+        <th>Moneda</th>
+        <th>Proveedores evaluados</th>
+        <th>URL simulación</th>
+        <th>Observaciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="12">Aún no hay simulaciones OCI validadas: el contenedor no puede abrir los detalles ni la pestaña Respuestas. No se deben interpretar los filtros de la captura como una confirmación de OCI, pues cada simulación requiere validación individual.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Metodología</h2>
+  <ol>
+    <li>Filtrar Estado de Simulación por Cerrado.</li>
+    <li>Filtrar Instrumento por Nube pública V.</li>
+    <li>Ampliar Elementos por página a 100.</li>
+    <li>Entrar a cada número de simulación.</li>
+    <li>Validar que la nube sea Oracle Cloud Infrastructure / OCI.</li>
+    <li>Abrir la pestaña Respuestas.</li>
+    <li>Identificar el menor Precio Ofertado Con Impuestos entre proveedores.</li>
+  </ol>
+
+  <div class="warning">
+    <strong>Limitación técnica:</strong> el portal sí responde en el navegador del usuario, como muestra la captura recibida. Sin embargo, desde este entorno de automatización el acceso directo al dominio simuladoresvistapublica.colombiacompra.gov.co fue bloqueado por el proxy con respuesta 403 Forbidden. Por ello, el valor 0 corresponde únicamente a registros descargados automáticamente por el contenedor, no a resultados del portal.
+  </div>
+</body>
+</html>
